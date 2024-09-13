@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "LibContract";
+
+service MonsterService {
+	rpc Insert (NewMonsterRequest) returns (Monster);
+	rpc Get (MonsterLookupModel) returns (Monster);
+	rpc GetList (google.protobuf.Empty) returns (MonsterList);
+}
+
+message NewMonsterRequest {
+	string name = 1;
+	int32 health = 2;
+	bool isLegendary = 3;
+}
+
+message MonsterLookupModel {
+	string id = 1;
+}
+
+message Monster{
+	string id = 1;
+	string name = 2;
+	int32 health = 3;
+	bool isLegendary = 4;
+}
+
+message MonsterList{
+	repeated Monster monsters = 1;
+}
