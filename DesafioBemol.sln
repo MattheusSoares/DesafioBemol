@@ -29,15 +29,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api 1", "1 - Api 1", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Api 2", "2 - Api 2", "{9CDF2361-80C6-437F-A2A2-F10151394B3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiUm.Domain.Test", "ApiUm.Domain.Test\ApiUm.Domain.Test.csproj", "{70385AAD-26EB-48DE-866D-E640EDBFA7A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiUm.Domain.Test", "ApiUm.Domain.Test\ApiUm.Domain.Test.csproj", "{70385AAD-26EB-48DE-866D-E640EDBFA7A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiUm.Test", "ApiUm.Test\ApiUm.Test.csproj", "{E20D85A5-DA37-4FAC-960D-AC8B35229533}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiUm.Test", "ApiUm.Test\ApiUm.Test.csproj", "{E20D85A5-DA37-4FAC-960D-AC8B35229533}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiUm.Infra.ServiceBus.Test", "ApiUm.Infra.ServiceBus.Test\ApiUm.Infra.ServiceBus.Test.csproj", "{721C470D-6B5B-4356-9A7A-7F5C0C3DF5DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiUm.Infra.ServiceBus.Test", "ApiUm.Infra.ServiceBus.Test\ApiUm.Infra.ServiceBus.Test.csproj", "{721C470D-6B5B-4356-9A7A-7F5C0C3DF5DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDois.Test", "ApiDois.Test\ApiDois.Test.csproj", "{402A9DCF-01F9-4449-A2A3-84BCA81BE461}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDois.Test", "ApiDois.Test\ApiDois.Test.csproj", "{402A9DCF-01F9-4449-A2A3-84BCA81BE461}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDois.Infra.ServiceBus.Test", "ApiDois.Infra.ServiceBus.Test\ApiDois.Infra.ServiceBus.Test.csproj", "{937CD3F7-D113-4423-A381-187B0C471D1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDois.Infra.ServiceBus.Test", "ApiDois.Infra.ServiceBus.Test\ApiDois.Infra.ServiceBus.Test.csproj", "{937CD3F7-D113-4423-A381-187B0C471D1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AA93DF76-5923-4DED-955B-335A4CC4E902}"
+	ProjectSection(SolutionItems) = preProject
+		Bemol Desafio.postman_collection.json = Bemol Desafio.postman_collection.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "9f1c6e5b-0135-4319-ab44-9435515e84f4",
+		"name": "Bemol Desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15639416"
+	},
+	"item": [
+		{
+			"name": "Create Character",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI2MjgyOTM2LCJpc3MiOiJteV9pc3N1ZXIuY29tIiwiYXVkIjoibXlfYXVkaWVuY2UuY29tIn0.Hxh8JltJm6puzig5_lxFfdA6B9g7VXl_SVOEfWA_Nx4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Thalia Verdant\",\r\n  \"race\": \"Humano\",\r\n  \"class\": \"Paladino\",\r\n  \"nivel\": 20,\r\n  \"background\": \"Acólito\",\r\n  \"proficiencyBonus\": 6,\r\n  \"strength\": 20,\r\n  \"dexterity\": 10,\r\n  \"constitution\": 18,\r\n  \"intelligence\": 10,\r\n  \"wisdom\": 12,\r\n  \"charisma\": 16\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7101/v1/characters/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7101",
+					"path": [
+						"v1",
+						"characters",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"user\",\r\n  \"password\": \"pass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7101/v1/login/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7101",
+					"path": [
+						"v1",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Characters",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI2MjgyOTM2LCJpc3MiOiJteV9pc3N1ZXIuY29tIiwiYXVkIjoibXlfYXVkaWVuY2UuY29tIn0.Hxh8JltJm6puzig5_lxFfdA6B9g7VXl_SVOEfWA_Nx4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7101/v1/characters/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7101",
+					"path": [
+						"v1",
+						"characters",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
