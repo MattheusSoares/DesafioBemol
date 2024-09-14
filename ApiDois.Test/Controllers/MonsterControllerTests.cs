@@ -44,7 +44,7 @@ public class MonsterControllerTests
     public async Task GetListAsync_ReturnsOkResult_WithMonsterList()
     {
         // Arrange
-        var monsterListResponse = new MonsterList(); // Assume MonsterList is a valid object
+        var monsterListResponse = new MonsterList();
         var monsterListCall = new AsyncUnaryCall<MonsterList>(Task.FromResult(new MonsterList()), null, null, null, null);
         _mockClient.Setup(client => client.GetListAsync(It.IsAny<Empty>(), null, null, CancellationToken.None))
                    .Returns(monsterListCall);
