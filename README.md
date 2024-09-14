@@ -4,7 +4,7 @@ Abra o arquivo DesafioBemol.sln no Visual Studio
 
 Inicialização: Ao abrir a Solution do projeto, clique com o botão direito na Solution e defina ambas APIs como Startup Project (Solution -> Configure Startup Projects). Marque ApiUm e ApiDois, depois clique em OK.
 
-Seguem também uma collection do Postman para realizar as chamadas das APIs.
+Seguem também uma collection do Postman para realizar as chamadas das APIs. É necessário atualizar o token JWT para as chamadas de **Characters** (Header X-Authorization).
 
 # ApiUm
 
