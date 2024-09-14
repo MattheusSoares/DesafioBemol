@@ -1,4 +1,4 @@
-﻿using ApiUm.Domain.Characters.Commands.Result;
+﻿using ApiUm.Domain.Users.Commands.Result;
 using ApiUm.Domain.Users.Commands.Input;
 using ApiUm.Domain.Users.Interfaces.Handlers;
 using Microsoft.AspNetCore.Mvc;
@@ -23,9 +23,9 @@ public class UserController : ControllerBase
     /// <response code="500">Internal Server Error</response>
     [HttpPost]
     [Route("v1/login")]
-    [ProducesResponseType(typeof(CharacterCommandResult), StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(CharacterCommandResult), StatusCodes.Status401Unauthorized)]
-    [ProducesResponseType(typeof(CharacterCommandResult), StatusCodes.Status500InternalServerError)]
+    [ProducesResponseType(typeof(UserLoginCommandResult), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(UserLoginCommandResult), StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(typeof(UserLoginCommandResult), StatusCodes.Status500InternalServerError)]
     public IActionResult Login([FromBody] UserLoginCommand command)
     {
         var response = _handler.Login(command);
